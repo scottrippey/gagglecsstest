@@ -1,0 +1,92 @@
+@COLOR-ORANGE: #F26722;
+@COLOR-BLUE: #263692;
+@COLOR-GRAY: #666666;
+@COLOR-GRAY-LIGHT: #eeeeee;
+
+// Common styles
+& {
+	body {
+		margin: 0;
+		font-family: 'Lato', sans-serif;
+		font-size: 1.1rem;
+		color: @COLOR-GRAY;
+	}
+	
+	h1, h2, h3, h4, h5, h6 {
+		font-weight: normal;
+		color: @COLOR-ORANGE;
+		margin: 0;
+	}
+	
+	h2 {
+		font-size: 2.4rem;
+	}
+	
+	img {
+		width: 100%;
+	}
+
+	a {
+		text-decoration: none;		
+	}
+
+}
+
+
+
+& {
+	
+	.container {
+		margin: 0 2em;
+	}
+	
+	#branding {
+		margin: 3em 0;
+	}
+	
+	#navigation {
+		background-color: @COLOR-BLUE;
+		color: @COLOR-GRAY-LIGHT;
+		font-size: 1.6rem;
+		line-height: 2.4;
+		text-align: center;
+		
+		a {
+			color: @COLOR-GRAY-LIGHT;
+			display: block;
+		}
+		#main-menu {
+			list-style-type: none;
+			padding: 0;
+			margin: 0;
+			display: none;
+		}
+		#menu-toggle {
+			transition: background-color 0.25s ease-in-out;
+			&.active {
+				background-color: @COLOR-ORANGE;
+			}
+		}
+	}
+	
+	#news {
+		color: @COLOR-GRAY-LIGHT;
+		background-color: @COLOR-BLUE;
+		padding: 0.5rem;
+		h2 {
+			color: @COLOR-GRAY-LIGHT;
+		}
+		a {
+			color: @COLOR-ORANGE;
+			display: block;
+			text-align: right;
+		}
+	}
+	#footer {
+		background-color: @COLOR-GRAY;
+		color: @COLOR-GRAY-LIGHT;
+		text-align: center;
+		line-height: 3.5;
+	}
+
+}
