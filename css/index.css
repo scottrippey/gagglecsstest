@@ -23,21 +23,26 @@ img {
 a {
   text-decoration: none;
 }
+* {
+  box-sizing: border-box;
+}
 .container {
-  margin: 0 2em;
+  margin: 0 1em;
 }
 #branding {
   margin: 3em 0;
 }
 #navigation {
   background-color: #263692;
-  color: #eeeeee;
   font-size: 1.6rem;
   line-height: 2.4;
   text-align: center;
 }
+#navigation,
 #navigation a {
-  color: #eeeeee;
+  color: #ffffff;
+}
+#navigation a {
   display: block;
 }
 #navigation #main-menu {
@@ -53,10 +58,10 @@ a {
   background-color: #f26722;
 }
 #news {
-  color: #eeeeee;
   background-color: #263692;
   padding: 0.5rem;
 }
+#news,
 #news h2 {
   color: #eeeeee;
 }
@@ -71,4 +76,61 @@ a {
   text-align: center;
   line-height: 3.5;
 }
-/*# sourceMappingURL=data:application/json;base64,eyJ2ZXJzaW9uIjozLCJzb3VyY2VzIjpbImluZGV4Lmxlc3MiXSwibmFtZXMiOltdLCJtYXBwaW5ncyI6IkFBT0M7RUFDQyxTQUFBO0VBQ0EsYUFBYSxrQkFBYjtFQUNBLGlCQUFBO0VBQ0EsY0FBQTs7QUFHRDtBQUFJO0FBQUk7QUFBSTtBQUFJO0FBQUk7RUFDbkIsbUJBQUE7RUFDQSxjQUFBO0VBQ0EsU0FBQTs7QUFHRDtFQUNDLGlCQUFBOztBQUdEO0VBQ0MsV0FBQTs7QUFHRDtFQUNDLHFCQUFBOztBQVNEO0VBQ0MsYUFBQTs7QUFHRDtFQUNDLGFBQUE7O0FBR0Q7RUFDQyx5QkFBQTtFQUNBLGNBQUE7RUFDQSxpQkFBQTtFQUNBLGdCQUFBO0VBQ0Esa0JBQUE7O0FBTEQsV0FPQztFQUNDLGNBQUE7RUFDQSxjQUFBOztBQVRGLFdBV0M7RUFDQyxxQkFBQTtFQUNBLFVBQUE7RUFDQSxTQUFBO0VBQ0EsYUFBQTs7QUFmRixXQWlCQztFQUNDLDhDQUFBOztBQUNBLFdBRkQsYUFFRTtFQUNBLHlCQUFBOztBQUtIO0VBQ0MsY0FBQTtFQUNBLHlCQUFBO0VBQ0EsZUFBQTs7QUFIRCxLQUlDO0VBQ0MsY0FBQTs7QUFMRixLQU9DO0VBQ0MsY0FBQTtFQUNBLGNBQUE7RUFDQSxpQkFBQTs7QUFHRjtFQUNDLHlCQUFBO0VBQ0EsY0FBQTtFQUNBLGtCQUFBO0VBQ0EsZ0JBQUEiLCJmaWxlIjoidW5kZWZpbmVkIn0= */
+@media (min-width: 950px) {
+  h2 {
+    font-size: 2.0rem;
+  }
+  .container {
+    width: 950px;
+    margin: auto;
+  }
+  #branding #logo {
+    width: auto;
+    display: block;
+    margin: auto;
+  }
+  #navigation #main-menu {
+    display: block !important;
+  }
+  #navigation #main-menu li {
+    display: inline-block;
+    width: 186px;
+  }
+  #navigation #menu-toggle {
+    display: none;
+  }
+  #banner {
+    position: relative;
+    margin-bottom: 2em;
+  }
+  #banner img {
+    box-shadow: 0.1rem 0.3rem 0.3rem rgba(102, 102, 102, 0.5);
+    display: block;
+  }
+  #banner .banner-content {
+    background-color: rgba(242, 103, 34, 0.8);
+    padding: 1rem;
+    width: 20rem;
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 100%;
+  }
+  #banner .banner-content,
+  #banner .banner-content h2 {
+    color: #ffffff;
+  }
+  #content {
+    padding: 0.5rem 0;
+    width: 65%;
+    float: left;
+  }
+  #sidebar {
+    width: 35%;
+    float: right;
+  }
+  #footer {
+    clear: both;
+  }
+}
+/*# sourceMappingURL=data:application/json;base64,eyJ2ZXJzaW9uIjozLCJzb3VyY2VzIjpbImluZGV4Lmxlc3MiXSwibmFtZXMiOltdLCJtYXBwaW5ncyI6IkFBUUM7RUFDQyxTQUFBO0VBQ0EsYUFBYSxrQkFBYjtFQUNBLGlCQUFBO0VBQ0EsY0FBQTs7QUFHRDtBQUFJO0FBQUk7QUFBSTtBQUFJO0FBQUk7RUFDbkIsbUJBQUE7RUFDQSxjQUFBO0VBQ0EsU0FBQTs7QUFHRDtFQUNDLGlCQUFBOztBQUdEO0VBQ0MsV0FBQTs7QUFHRDtFQUNDLHFCQUFBOztBQUdEO0VBQ0Msc0JBQUE7O0FBUUQ7RUFDQyxhQUFBOztBQUdEO0VBQ0MsYUFBQTs7QUFHRDtFQUNDLHlCQUFBO0VBRUEsaUJBQUE7RUFDQSxnQkFBQTtFQUNBLGtCQUFBOztBQUhBO0FBQUcsV0FBRTtFQUFJLGNBQUE7O0FBRlYsV0FPQztFQUNDLGNBQUE7O0FBUkYsV0FVQztFQUNDLHFCQUFBO0VBQ0EsVUFBQTtFQUNBLFNBQUE7RUFDQSxhQUFBOztBQWRGLFdBZ0JDO0VBQ0MsOENBQUE7O0FBQ0EsV0FGRCxhQUVFO0VBQ0EseUJBQUE7O0FBS0g7RUFFQyx5QkFBQTtFQUNBLGVBQUE7O0FBRkE7QUFBRyxLQUFFO0VBQUssY0FBQTs7QUFEWCxLQUlDO0VBQ0MsY0FBQTtFQUNBLGNBQUE7RUFDQSxpQkFBQTs7QUFJRjtFQUNDLHlCQUFBO0VBQ0EsY0FBQTtFQUNBLGtCQUFBO0VBQ0EsZ0JBQUE7O0FBa0ZGLFFBM0VtQztFQUVsQztJQUNDLGlCQUFBOztFQUdEO0lBQ0MsWUFBQTtJQUNBLFlBQUE7O0VBR0QsU0FDQztJQUNDLFdBQUE7SUFDQSxjQUFBO0lBQ0EsWUFBQTs7RUFJRixXQUNDO0lBQ0MseUJBQUE7O0VBRkYsV0FDQyxXQUlDO0lBQ0MscUJBQUE7SUFDQSxZQUFBOztFQVBILFdBVUM7SUFDQyxhQUFBOztFQUlDO0lBQ0Msa0JBQUE7SUFFQSxrQkFBQTs7RUFIRCxPQUtDO0lBQ0MseURBQUE7SUFDQSxjQUFBOztFQVBGLE9BVUM7SUFDQyx5Q0FBQTtJQUdBLGFBQUE7SUFDQSxZQUFBO0lBRUEsa0JBQUE7SUFDQSxNQUFBO0lBQVEsT0FBQTtJQUNSLFlBQUE7O0VBUEEsT0FGRDtFQUVJLE9BRkosZ0JBRU07SUFBSyxjQUFBOztFQVlaO0lBQ0MsaUJBQUE7SUFDQSxVQUFBO0lBQ0EsV0FBQTs7RUFFRDtJQUNDLFVBQUE7SUFDQSxZQUFBOztFQUdEO0lBQ0MsV0FBQSIsImZpbGUiOiJ1bmRlZmluZWQifQ== */
